@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'Habilite',
+  description: 'Habilité est une plateforme tout-en-un qui permet à tous ceux qui emménagent de souscrire conjointement à l\'électricité, l\'eau, le gaz, la fibre et l\'assurance habitation.',
 }
 
 import Hero from '@/components/hero'
@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Zigzag />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Newsletter />
     </>
   )

@@ -37,8 +37,9 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
-        'architects-daughter': ['var(--font-architects-daughter)', 'sans-serif']
+        aquatico: ['Aquatico', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+        dmsans: ['DM Sans', 'sans-serif'],
       },
       fontSize: {
         xs: '0.75rem',
