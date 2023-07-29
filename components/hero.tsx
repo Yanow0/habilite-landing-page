@@ -8,7 +8,7 @@ export default function Hero() {
 
         {/* Illustration behind hero content */}
         <div className="absolute left-0 bottom-0 -ml-20 hidden lg:block pointer-events-none" aria-hidden="true" data-aos="fade-up" data-aos-delay="400">
-          <svg className="max-w-full" width="564" height="552" viewBox="100 350 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="max-w-full hidden" width="564" height="552" viewBox="100 350 564 552" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="illustration-02" x1="-3.766" y1="300.204" x2="284.352" y2="577.921" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#187588" stopOpacity=".01" />
@@ -37,7 +37,7 @@ export default function Hero() {
                 <a className="btn text-white bg-primary-dark-blue hover:bg-primary-dark-blue w-full mb-4 sm:w-auto sm:mb-0 rounded-l-full" href="#team">Notre équipe</a>
               </div>
               <div data-aos="fade-down" data-aos-delay="400">
-                <a className="btn text-primary-dark-blue bg-primary-beige hover:bg-primary-dark-blue w-full mb-4 sm:w-auto sm:mb-0" href="#project">Notre projet</a>
+                <a className="btn text-primary-dark-blue bg-primary-beige hover:bg-primary-dark-blue w-full mb-4 sm:w-auto sm:mb-0" href="#ambition">Notre ambition</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-white bg-primary-light-blue hover:bg-primary-light-blue w-full sm:w-auto rounded-r-full" href="#contact">Contactez-nous</a>

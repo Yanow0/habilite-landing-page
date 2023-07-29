@@ -115,9 +115,42 @@
     border-color: #E1D2B8;
 }
 
-.text-primary-light-beige {
+.border-primary-light-beige {
+    border-color: #EFE8DA;
+}
+
+.bg-primary-light-blue-hover:hover {
+    background-color: #187588;
+}
+
+.bg-primary-dark-blue-hover:hover {
+    background-color: #374255;
+}
+
+.bg-primary-beige-hover:hover {
+    background-color: #E1D2B8;
+}
+
+.bg-primary-light-beige-hover:hover {
     background-color: #EFE8DA;
 }
+
+.text-primary-light-blue-hover:hover {
+    color: #187588;
+}
+
+.text-primary-dark-blue-hover:hover {
+    color: #374255;
+}
+
+.text-primary-beige-hover:hover {
+    color: #E1D2B8;
+}
+
+.text-primary-light-beige-hover:hover {
+    color: #EFE8DA;
+}
+
 
 /* Custom font Aquatico */
 @font-face {
