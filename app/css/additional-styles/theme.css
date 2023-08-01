@@ -151,6 +151,15 @@
     color: #EFE8DA;
 }
 
+.flipCardFace {
+    background: 'blue'; 
+    color: 'white';
+}
+
+.flipCardBack {
+    background: 'blue'; 
+    color: 'white';
+}
 
 /* Custom font Aquatico */
 @font-face {

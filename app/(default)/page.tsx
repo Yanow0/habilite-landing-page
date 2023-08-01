@@ -3,8 +3,8 @@ export const metadata = {
   description: 'Habilité est une plateforme tout-en-un qui permet à tous ceux qui emménagent de souscrire conjointement à l\'électricité, l\'eau, le gaz, la fibre et l\'assurance habitation.',
 }
 
-import Hero from '@/components/hero'
-import Features from '@/components/features'
+import Intro from '@/components/intro'
+import Team from '@/components/team'
 import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
@@ -12,8 +12,8 @@ import Testimonials from '@/components/testimonials'
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Features />
+      <Intro />
+      <Team />
       <Zigzag />
       {/* <Testimonials /> */}
       <Newsletter />

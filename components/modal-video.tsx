@@ -76,7 +76,7 @@ export default function ModalVideo({
             leaveFrom="oopacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <div className="max-w-6xl mx-auto h-full flex items-center">
+            <div className="max-w-full mx-auto h-full flex items-center">
               <Dialog.Panel className="w-full max-h-full aspect-video bg-black overflow-hidden">
                 <video ref={videoRef} width={videoWidth} height={videoHeight} loop controls>
                   <source src={video} type="video/mp4" />
