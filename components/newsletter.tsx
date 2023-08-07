@@ -19,16 +19,16 @@ export default function Newsletter() {
       </section>);
   }
   return (
-    <section id='contact' className="pt-10 px-4 md:px-8">
-      <div className="max-w-full mx-auto px-4 sm:px-6">
+    <section id='contact' className="pt-10 px-4 md:px-16">
+      <div className="max-w-full mx-auto px-4 md:px-10">
 
         {/* CTA box */}
-        <div className="relative bg-primary-light-blue py-10 px-8 md:py-16 md:px-12 rounded-[24px]" data-aos="fade-left">
+        <div className="relative" data-aos="fade-left">
 
-          <div className="relative flex flex-col lg:flex-row justify-between md:px-8">
+          <div className="relative flex flex-col lg:flex-row justify-between">
 
             {/* CTA content */}
-            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
+            <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2 bg-primary-dark-blue py-10 px-8 md:py-16 md:px-12 rounded-[24px]">
               <h3 className="h3 text-white mb-8 text-2xl md:text-3xl lg:text-3xl text-center md:text-left">Contactez-nous</h3>
 
               <ul className='text-left md:pl-4'>
@@ -48,12 +48,15 @@ export default function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
+            <form className="w-full lg:w-1/2 bg-primary-light-blue py-10 px-8 md:py-16 md:px-12 rounded-[24px]" onSubmit={handleSubmit}>
               <h3 className="h3 text-white text-2xl md:text-3xl lg:text-3xl mb-8 text-center md:text-left">Posez-nous vos questions</h3>
               <div className='md:pl-4'>
-                <input type="text" name="Nom" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Nom" aria-label="Nom" />
-                <input type="email" name="Email" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Adresse email" aria-label="Email" />
-                <textarea name="Message" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Message" aria-label="Message" />
+                <input type="text" name="Nom" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Nom" aria-label="Nom" required />
+                <ValidationError prefix="Message" field="Message" errors={state.errors} />
+                <input type="email" name="Email" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Adresse email" aria-label="Email" required />
+                <ValidationError prefix="Email" field="Email" errors={state.errors} />
+                <textarea name="Message" className="w-full appearance-none bg-white border border-primary-beige rounded-md px-3 md:px-4 py-2 md:py-3 mb-4 text-primary-dark-blue placeholder-black text-md md:text-xl lg:text-xl font-dmsans" placeholder="Message" aria-label="Message" required />
+                <ValidationError prefix="Message" field="Message" errors={state.errors} />
                 <button className="btn w-full text-white bg-primary-light-blue hover:bg-white text-primary-light-blue-hover font-bold rounded-[18px] border-2 border-white text-md md:text-xl lg:text-xl" type='submit' disabled={state.submitting}>Envoyer</button>
               </div>
             </form>

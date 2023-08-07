@@ -20,8 +20,8 @@ const styles = {
 
 export default function Team() {
   return (
-    <section id='team' className='pt-10 mb-16'>
-      <div className="max-w-full mx-auto px-4 sm:px-6">
+    <section id='team' className='pt-10 mb-16 md:px-16'>
+      <div className="max-w-full mx-auto px-4 md:px-10">
         <div className="py-2 md:py-2">
 
           {/* Section header */}
@@ -30,7 +30,7 @@ export default function Team() {
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto sm:max-w-sm md:max-w-2xl lg:max-w-none flex items-center gap-8 justify-around lg:justify-around flex-col md:flex-row lg:flex-row" data-aos-id-blocks>
+          <div className="max-w-sm mx-auto sm:max-w-sm md:max-w-2xl lg:max-w-none flex items-center gap-8 justify-between lg:justify-between flex-col md:flex-row lg:flex-row" data-aos-id-blocks>
 
             {/* 1st item */}
             <ReactFlipCard
@@ -45,7 +45,7 @@ export default function Team() {
               backComponent={
                 <div className="flex flex-col justify-center items-center border-2 border-primary-light-blue rounded-[16px] shadow-xl p-8 bg-primary-light-beige h-full" data-aos="fade-right" data-aos-anchor="[data-aos-id-blocks]">
                   <h4 className="h4 mb-6 text-primary-light-blue">Emile-Kôji</h4>
-                  <p className="text-md text-black text-center font-dmsans text-gray-800">C'est notre spécialiste marketing. Avec un sens du relationnel innée et une rigueur acquise en prépa scientifique, il développe la notoriété de Habilité jour après jour.</p>
+                  <p className="text-md text-black text-center font-dmsans text-gray-800">C'est notre spécialiste marketing. Avec un sens du relationnel inné et une rigueur acquise en prépa scientifique, il développe la notoriété de Habilité jour après jour.</p>
                 </div>
               }
             />
@@ -81,7 +81,7 @@ export default function Team() {
               backComponent={
                 <div className="flex flex-col justify-center items-center border-2 border-primary-light-blue rounded-[16px] shadow-xl p-8 bg-primary-light-beige h-full" data-aos="fade-right" data-aos-anchor="[data-aos-id-blocks]">
                   <h4 className="h4 mb-6 text-primary-light-blue">Yanis</h4>
-                  <p className="text-md text-black text-center font-dmsans text-gray-800">L'esprit d'entrepreneur de Yanis, mêlé à ses études dans l'informatique lui permettent d'assurer l'aspect digital de Habilité.  </p>
+                  <p className="text-md text-black text-center font-dmsans text-gray-800">L'esprit d'entrepreneur de Yanis mêlé à ses études dans l'informatique lui permet d'assurer l'aspect digital de Habilité.  </p>
                 </div>
               }
             />
