@@ -1,3 +1,5 @@
+'use client';
+
 import VideoThumb from '@/public/images/CoverPageSite.jpg'
 import ModalVideo from '@/components/modal-video'
 
@@ -34,13 +36,28 @@ export default function Intro() {
             </div>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center pt-16">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-2xl text-white bg-primary-dark-blue hover:bg-primary-dark-blue w-full mb-4 sm:w-auto sm:mb-0 rounded-full md:rounded-r lg:rounded-r" href="#team">Notre équipe</a>
+                <a className="btn text-2xl text-white bg-primary-dark-blue hover:bg-primary-dark-blue w-full mb-4 sm:w-auto sm:mb-0 rounded-full md:rounded-r lg:rounded-r" href="/"
+                  onClick={e => {
+                    let hero = document.getElementById("team");
+                    e.preventDefault();  // Stop Page Reloading
+                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                  }}>Notre équipe</a>
               </div>
               <div data-aos="fade-down" data-aos-delay="400">
-                <a className="btn text-2xl text-primary-dark-blue bg-primary-beige hover:bg-primary-dark-blue w-full mb-4 sm:w-auto rounded-full md:rounded-none sm:mb-0" href="#ambition">Notre ambition</a>
+                <a className="btn text-2xl text-primary-dark-blue bg-primary-beige hover:bg-primary-dark-blue w-full mb-4 sm:w-auto rounded-full md:rounded-none sm:mb-0" href="/"
+                  onClick={e => {
+                    let hero = document.getElementById("ambition");
+                    e.preventDefault();  // Stop Page Reloading
+                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                  }}>Notre ambition</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-2xl text-white bg-primary-light-blue hover:bg-primary-light-blue w-full sm:w-auto rounded-full md:rounded-l lg:rounded-l" href="#contact">Contactez-nous</a>
+                <a className="btn text-2xl text-white bg-primary-light-blue hover:bg-primary-light-blue w-full sm:w-auto rounded-full md:rounded-l lg:rounded-l" href="/"
+                  onClick={e => {
+                    let hero = document.getElementById("contact");
+                    e.preventDefault();  // Stop Page Reloading
+                    hero && hero.scrollIntoView({ behavior: 'smooth' });
+                  }}>Contactez-nous</a>
               </div>
             </div>
           </div>

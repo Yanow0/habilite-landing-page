@@ -6,8 +6,8 @@ import ImageProjet03 from '@/public/images/ImageProjet-3.png'
 
 export default function Zigzag() {
   return (
-    <section id='ambition' className="py-12 px-4 md:px-10 lg:px-10">
-      <div className="max-w-full mx-auto px-4 sm:px-6">
+    <section id='ambition' className="py-12 px-4 md:px-16 lg:px-16">
+      <div className="max-w-full mx-auto px-4 md:px-10">
         <div>
 
           {/* Section header */}
@@ -23,7 +23,7 @@ export default function Zigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-right">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet01} width={540} height={405} alt="Abonnement" />
+                <Image className="max-w-full mx-auto md:mr-0 md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet01} width={540} height={405} alt="Abonnement" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 px-4 md:px-0" data-aos="fade-right">
@@ -38,13 +38,13 @@ export default function Zigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-left">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet02} width={540} height={405} alt="Documents" />
+                <Image className="max-w-full mx-auto md:ml-0 md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet02} width={540} height={405} alt="Documents" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 px-4 md:px-0" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <h3 className="h3 mb-3 text-primary-light-blue text-xl md:text-4xl lg:text-4xl">Téléverse tes documents et on s'occupe du reste</h3>
-                  <p className="text-md md:text-2xl lg:text-2xl text-gray-600 mb-4 font-dmsans">Fini les démarches interminables, une fois que tu auras déposé tes documents tu pourras profiter et gérer tous tes services sans aucune contraintes.</p>                
+                  <p className="text-md md:text-2xl lg:text-2xl text-gray-600 mb-4 font-dmsans">Fini les démarches interminables, une fois que tu auras déposé tes documents tu pourras profiter et gérer tous tes services sans aucune contrainte.</p>                
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Zigzag() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-right">
-                <Image className="max-w-full mx-auto md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet03} width={540} height={405} alt="Pack" />
+                <Image className="max-w-full mx-auto md:mr-0 md:max-w-none h-auto rounded-[20px] border-4 border-primary-light-blue" src={ImageProjet03} width={540} height={405} alt="Pack" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 px-4 md:px-0" data-aos="fade-right">
